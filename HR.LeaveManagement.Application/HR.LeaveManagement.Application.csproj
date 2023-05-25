@@ -1,0 +1,88 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Profiles\" />
+    <None Remove="DTOS\Common\" />
+    <None Remove="Features\" />
+    <None Remove="Features\LeaveType\" />
+    <None Remove="Features\LeaveType\Handlers\" />
+    <None Remove="Features\LeaveType\Handlers\Queries\" />
+    <None Remove="Features\LeaveType\Handlers\Commands\" />
+    <None Remove="Features\LeaveType\Requests\" />
+    <None Remove="Features\LeaveType\Requests\Commands\" />
+    <None Remove="Features\LeaveType\Requests\Queries\" />
+    <None Remove="Features\LeaveAllocation\Handlers\" />
+    <None Remove="Features\LeaveAllocation\Requests\" />
+    <None Remove="Features\LeaveAllocation\Handlers\Commands\" />
+    <None Remove="Features\LeaveAllocation\Handlers\Queries\" />
+    <None Remove="Features\LeaveAllocation\Requests\Commands\" />
+    <None Remove="Features\LeaveAllocation\Requests\Queries\" />
+    <None Remove="Features\LeaveRequest\Handlers\" />
+    <None Remove="Features\LeaveRequest\Requests\" />
+    <None Remove="DTOs\LeaveAllocation\" />
+    <None Remove="DTOs\LeaveRequest\" />
+    <None Remove="DTOs\LeaveType\" />
+    <None Remove="Features\LeaveRequests\Requests\Commands\" />
+    <None Remove="Features\LeaveRequests\Handlers\Commands\" />
+    <None Remove="DTOs\LeaveType\Validators\" />
+    <None Remove="DTOs\LeaveRequest\Validators\" />
+    <None Remove="DTOs\LeaveAllocation\Validators\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Responses\" />
+    <None Remove="Contracts\" />
+    <None Remove="Contracts\Persistence\" />
+    <None Remove="Contracts\Infrastructure\" />
+    <None Remove="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Profiles\" />
+    <Folder Include="DTOs\Common\" />
+    <Folder Include="Features\" />
+    <Folder Include="Features\LeaveTypes\" />
+    <Folder Include="Features\LeaveTypes\Handlers\" />
+    <Folder Include="Features\LeaveTypes\Handlers\Queries\" />
+    <Folder Include="Features\LeaveTypes\Handlers\Commands\" />
+    <Folder Include="Features\LeaveTypes\Requests\" />
+    <Folder Include="Features\LeaveTypes\Requests\Commands\" />
+    <Folder Include="Features\LeaveTypes\Requests\Queries\" />
+    <Folder Include="Features\LeaveAllocations\Handlers\" />
+    <Folder Include="Features\LeaveAllocations\Requests\" />
+    <Folder Include="Features\LeaveAllocations\Handlers\Commands\" />
+    <Folder Include="Features\LeaveAllocations\Handlers\Queries\" />
+    <Folder Include="Features\LeaveAllocations\Requests\Commands\" />
+    <Folder Include="Features\LeaveAllocations\Requests\Queries\" />
+    <Folder Include="Features\LeaveRequests\Handlers\" />
+    <Folder Include="Features\LeaveRequests\Requests\" />
+    <Folder Include="DTOs\LeaveAllocation\" />
+    <Folder Include="DTOs\LeaveRequest\" />
+    <Folder Include="DTOs\LeaveType\" />
+    <Folder Include="Features\LeaveRequests\Requests\Commands\" />
+    <Folder Include="Features\LeaveRequests\Handlers\Commands\" />
+    <Folder Include="DTOs\LeaveType\Validators\" />
+    <Folder Include="DTOs\LeaveRequest\Validators\" />
+    <Folder Include="DTOs\LeaveAllocation\Validators\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Responses\" />
+    <Folder Include="Contracts\" />
+    <Folder Include="Contracts\Persistence\" />
+    <Folder Include="Contracts\Infrastructure\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HR.LeaveManagement.Domain\HR.LeaveManagement.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjectionFixed" Version="5.1.2" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+  </ItemGroup>
+</Project>
